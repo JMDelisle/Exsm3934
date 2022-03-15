@@ -20,14 +20,26 @@ span {
 }
 
 
-body {
+body{
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../img/meatsign.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   background-attachment: fixed;
 }
+
+.main {
+  background-image: url("../img/meatsign.jpg");
+}
+
+.gallery {
+  background-image: url("../img/meats.jpg");
+}
+
+.contact {
+  background-image: url("../img/rackofmeats.jpeg");
+}
+
 header {
   background: #2d343a;
   width: 100%;
@@ -107,6 +119,8 @@ ul li a {
 }
 
 /* Contact page */
+
+
 section {
 background: none;
 color: white;
