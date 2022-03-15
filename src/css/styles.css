@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+label {
+    color: white;
+}
+
+  span {
+      color: beige;
+  }
+
+  /* (A) Image Rendering*/
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/meatsign.jpg");
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+
+  }
+  header {
+    background: #2d343a;
+    width: 100%;
+    padding: 40px 0;
+    color: rgb(241, 18, 18);
+    text-align: center;
+  }
+  
+  nav {
+    width: 100%;
+    background: aqua;
+    text-align: center;
+  }
+  
+  ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+  
+  ul li:hover {
+    background:rgb(0,0,0,0.3);
+  }
+  
+  ul li a {
+    color: #111;
+    text-decoration: none;
+  }
+  .sticky{
+    position:sticky;
+    top:0;
+  }
+
+
+
+  .menu {
+    width: 100%;
+    padding: 10px 20px;
+    background: aqua;
+    text-align: right;
+    color: black;
+    font-size: 30px;
+    display: none;
+    cursor:pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .menu {
+      display: block;
+    }
+    nav{
+      background:white;
+      color:black;
+    }
+    nav ul {
+      width: 100%;
+      display: none;
+    }
+  
+    nav ul li {
+      display: block;
+      text-align: center;
+    }
+  
+    .active {
+      display: block;
+    }
+  }
