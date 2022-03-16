@@ -3,4 +3,4 @@
 #EXSM3934 Final Project
 I have always dreamed of opening a resturants smoking variety of meats. 
 
-License:
+License: All photos will be credited accordingly,
