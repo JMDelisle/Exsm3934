@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Background image on main */
@@ -26,9 +27,6 @@ span {
   color: beige;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 /* Little blog about the company revise */
 article {
@@ -48,10 +46,6 @@ article {
 span.name {
   font-weight: bold;
   color: rgb(250, 0, 0);
-}
-
-.gallery {
-  background-image: url("../img/meats.jpg");
 }
 
 /* Nav header styling */
@@ -111,6 +105,89 @@ ul li a {
   cursor: pointer;
 }
 
+/*------------Gallery background picture--------------*/
+.gallery2 {
+  background-image: url(../img/meats.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Gallery fonts styling */
+#content :not(h2) {
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+
+#content h2 {
+  padding: 45%px;
+}
+
+/*---------- Image slider in gallery------------ */
+
+.slider {
+  width: 500px;
+  height: 300px;
+  background-color: rgb(247, 247, 242);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 2500px;
+  background-color: pink;
+  height: auto;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#slide-1:target~.image-container {
+  left: 0px;
+}
+
+#slide-2:target~.image-container {
+  left: -500px;
+}
+
+#slide-3:target~.image-container {
+  left: -1000px;
+}
+
+#slide-4:target~.image-container {
+  left: -1500px;
+}
+
+#slide-5:target~.image-container {
+  left: -2000px;
+}
+
+
+.buttons {
+  position: relative;
+  top: -25px;
+}
+
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(255, 0, 0, .75);
+}
+
 /* Fixed footer */
 footer {
   position: fixed;
@@ -119,88 +196,85 @@ footer {
   width: 100%;
   height: 40px;
   text-align: center;
-  background: lightblue;
+  background: aqua;
   font-weight: bold;
   font-style: italic;
   color: #111;
 }
 
-/* Slide show for gallery */
-div#captioned-gallery {
-  width: 100%;
-  overflow: hidden;
+/*-----------Contact page---------------*/
+/* Set font of all elements to 'Roboto' */
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
 }
 
-div {
-  margin: 0;
+body {
+	background-image: url(../img/meats.jpg);
 }
 
-div.slider {
-  position: relative;
-  width: 500%;
-  font-size: 0;
-  animation: 40s slidy infinite;
+h3 {
+	text-align: center;
 }
 
-div.slider div {
-  width: 20%;
-  height: auto;
-  display: inline-block;
-  position: inherit;
+/* Add styles to 'container' class */
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: transparent;
+	border-radius: 4px;
 }
 
-div.slider img {
-  height: auto;
-  width: auto;
-  max-width: 800px;
-  max-height: 1200px;
-  text-align: center;
-  }
-
-div.slider div p {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  width: 100%;
-  font-size: 2rem;
-  padding: .6rem;
-}
-
-
-
-
-/* Contact page */
-.contact {
-  background-image: url("../img/rackofmeats.jpeg");
-}
-
+/* Add styles to 'label' selector */
 label {
-  display: inline-block;
-  clear: left;
-  width: 250px;
-  text-align: right;
+	font-size: 0.85em;
+	margin-left: 12px;
+  color: black;
 }
 
-input {
-  display: inline-block;
-  background-color: lightblue;
-  border-radius: 5px;
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-.contactbg {
-  background: transparent;
-  color: white;
-  border-radius: 1em;
-  padding: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid red;
 }
 
+input[type=submit] {
+	background: red;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+input[type=submit]:hover {
+	background: #2196F3;
+}
+
+.center {
+	text-align: center;
+}
+/*------------Mediaquery--------------*/
 
 @media (min-width: 481px) and (max-width: 768px) {
   .menu {

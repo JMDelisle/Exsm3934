@@ -12,7 +12,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body class="contact">
+<body class="contactpage">
   <header>
     <h1 class="logo">Plump <span> Pig </span> Smokehouse</h1>
   </header>
@@ -25,31 +25,36 @@
     </ul>
   </nav>
 
-<section class="contactbg">
-  <form action="process.html" method="post" target="_blank"><br>
-    <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last Name:</label>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="emails">Email:</label>
-    <input type="email" id="emails" name="emails" multiple><br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Clear">
-  </form>
-</section>
+  <div class="container">
+    <h3>Contact Form</h3>
+    <p>Tell us your experience of Plump Pig Smokehouse</p>
+    <form action="#" name="contact_form">
+      <label for="first_name">First Name</label>
+      <input name="first_name" type="text" required placeholder="John"/>
+      <br>
+      <label for="last_name">Last Name</label>
+      <input name="last_name" type="text" required placeholder="Doe"/>
+      <br>
+      <label for="email">Email</label>
+      <input name="email" type="email" required placeholder="you@domain.com"/>
+      <br>
+      <label for="message">Message</label><br>
+      <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+      <div class="center">
+        <input type="submit" value="Submit">
+      </div>
+    </form>	
+  </div>
 
   <script src="js/scripts.js" defer></script>
 
 
   <footer>
     <div class="footer">
-      <p class="name">&copy; Jean-Marc Delisle </p>
+      <p class="footername">&copy; Jean-Marc Delisle </p>
     </div>
 
   </footer>
-
-
-
 </body>
 
 </html>
