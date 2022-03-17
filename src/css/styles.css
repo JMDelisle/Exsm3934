@@ -4,7 +4,7 @@
 }
 
 /* Background image on main */
-body {
+.mainpage {
   background-image: url("../img/meatsign.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -203,34 +203,35 @@ footer {
 }
 
 /*-----------Contact page---------------*/
-/* Set font of all elements to 'Roboto' */
-
-/* Remove outline of all elements on focus */
 *:focus {
 	outline: 0;
 }
 
-body {
-	background-image: url(../img/meats.jpg);
+.contactpage {
+	background-image: url(../img/rackofmeats.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h3 {
 	text-align: center;
+  color: white;
+}
+.red {
+  color: red;
 }
 
-/* Add styles to 'container' class */
 .container {
 	padding: 12px 24px 24px 24px;
 	margin: 48px 12px;
-	background: transparent;
+	background: rgb(135,206,250, .6) ;
 	border-radius: 4px;
 }
 
-/* Add styles to 'label' selector */
 label {
 	font-size: 0.85em;
 	margin-left: 12px;
-  color: black;
+  color: white;
 }
 
 input[type=text],input[type=email], textarea {
@@ -276,7 +277,7 @@ input[type=submit]:hover {
 }
 /*------------Mediaquery--------------*/
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 1200px) and (max-width: 481px) {
   .menu {
     display: block;
   }
@@ -301,9 +302,3 @@ input[type=submit]:hover {
   }
 }
 
-/* Media on sliders */
-@media screen and (max-width: 500px) {
-  figure.slider figure figcaption {
-    font-size: 1.2rem;
-  }
-}
