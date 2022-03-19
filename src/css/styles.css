@@ -174,10 +174,6 @@ ul li a {
   left: -1500px;
 }
 
-#slide-5:target~.image-container {
-  left: -2000px;
-}
-
 
 .buttons {
   position: relative;
@@ -193,21 +189,29 @@ ul li a {
 }
 
 /* Fixed footer */
-footer {
+.alert-primary {
   position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  background-color: aqua;
+  color: red;
   text-align: center;
-  background: aqua;
-  font-weight: bold;
-  font-style: italic;
-  color: #111;
 }
 
 /*-----------Contact page---------------*/
 *:focus {
 	outline: 0;
+}
+
+aside {
+  src: url(../img/Apron.jpg);
+  image-rendering: auto;
+  position: absolute;
+  padding: auto;
+  bottom: 0px;
+  right: 44%;
+  
 }
 
 .contactpage {
@@ -275,9 +279,6 @@ input[type=submit]:hover {
 	background: #2196F3;
 }
 
-.center {
-	text-align: center;
-}
 /*------------Mediaquery--------------*/
 
 @media (min-width: 1200px) and (max-width: 465px) {
