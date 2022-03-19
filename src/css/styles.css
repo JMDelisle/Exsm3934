@@ -113,12 +113,19 @@ ul li a {
 /* Gallery fonts styling */
 #content :not(h2) {
   font-style: italic;
-  color: rgb(0, 0, 0);
-}
+  color: rgb(199, 0, 0);}
 
-#content h2 {
-  padding: 45%px;
-}
+.containergallery {
+  text-align: center;
+  padding: 12px 24px 24px 24px;
+	margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background-color: rgb(255,250,250, .1);
+  width: 600px;
+  height: 140px;
+  }
+
 
 /*---------- Image slider in gallery------------ */
 
@@ -135,7 +142,6 @@ ul li a {
 
 .image-container {
   width: 2500px;
-  background-color: pink;
   height: auto;
   clear: both;
   position: relative;
@@ -189,7 +195,6 @@ ul li a {
 /* Fixed footer */
 footer {
   position: fixed;
-  padding: 10px 35px 10px 10px;
   bottom: 0;
   width: 100%;
   height: 40px;
@@ -222,7 +227,7 @@ h3 {
 .container {
 	padding: 12px 24px 24px 24px;
 	margin: 48px 12px;
-	background: rgb(135,206,250, .6) ;
+	background: rgb(135,206,250, .2) ;
 	border-radius: 4px;
 }
 
@@ -275,7 +280,7 @@ input[type=submit]:hover {
 }
 /*------------Mediaquery--------------*/
 
-@media (min-width: 1200px) and (max-width: 481px) {
+@media (min-width: 1200px) and (max-width: 465px) {
   .menu {
     display: block;
   }
