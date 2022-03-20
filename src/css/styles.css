@@ -13,8 +13,8 @@
 }
 
 .second {
-  font-family: Cinzel;
-  color: rgb(21, 18, 224);
+  font-family: fantasy;
+  color: whitesmoke;
   font-size: 20px;
   font-weight: normal;
 }
@@ -37,12 +37,12 @@ span {
 
 aside {
   image-rendering: crisp-edges;
-  position:fixed;
+  position: fixed;
   bottom: 8px;
   left: 16px;
   top: 225px;
   padding-left: 75px;
-  }
+}
 
 /* Main blog */
 
@@ -56,9 +56,10 @@ aside {
   background-color: transparent;
   color: white;
   transform: translate(-50%, -50%);
- }
- /* (E) */
-  .blogs {
+}
+
+/* (E) */
+.blogs {
   display: inline;
 }
 
@@ -102,7 +103,7 @@ ul li {
 
 /* button hover transparents */
 ul li:hover {
-  background: rgb(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Nav font color (D)*/
@@ -138,18 +139,19 @@ ul li a {
 /* Gallery fonts styling */
 #content :not(h2) {
   font-style: italic;
-  color: rgb(199, 0, 0);}
+  color: rgb(199, 0, 0);
+}
 
 .containergallery {
   text-align: center;
   padding: 12px 24px 24px 24px;
-	margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
-  background-color: rgb(255,250,250, .1);
+  background-color: rgb(255, 250, 250, .1);
   width: 600px;
   height: 140px;
-  }
+}
 
 
 /*---------- Image slider in gallery------------ */
@@ -164,15 +166,13 @@ ul li a {
   text-align: center;
   overflow: hidden;
 }
-  /* F */
+
+/* F */
 .image-container {
   width: 2500px;
   height: auto;
   clear: both;
   position: relative;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
   transition: left 2s;
 }
 
@@ -198,11 +198,6 @@ ul li a {
 #slide-4:target~.image-container {
   left: -1500px;
 }
-
-#slide-5:target~.image-container {
-  left: -2000px;
-}
-
 
 .buttons {
   position: relative;
@@ -232,77 +227,85 @@ footer {
 
 /*-----------Contact page---------------*/
 *:focus {
-	outline: 0;
+  outline: 0;
 }
 
 .contactpage {
-	background-image: url(../img/rackofmeats.jpeg);
+  background-image: url(../img/rackofmeats.jpeg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 h3 {
-	text-align: center;
+  text-align: center;
   color: white;
 }
+
 .red {
   color: red;
 }
 
 .container {
-	padding: 12px 24px 24px 24px;
-	margin: 48px 12px;
-	background: rgb(135,206,250, .2) ;
-	border-radius: 4px;
+  padding: 12px 24px 24px 24px;
+  margin: 48px 12px;
+  background: rgb(135, 206, 250, .2);
+  border-radius: 4px;
 }
 
 label {
-	font-size: 0.85em;
-	margin-left: 12px;
+  font-size: 0.85em;
+  margin-left: 12px;
   color: white;
 }
 
-input[type=text],input[type=email], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid rgb(114, 114, 114);
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(114, 114, 114);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-input[type=text]:focus,input[type=email]:focus, textarea:focus {
-	border: 1px solid red;
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  border: 1px solid red;
 }
 
 input[type=submit] {
-	background: red;
-	margin: 0 auto;
-	outline: 0;
-	color: white;
-	border: 0;
-	padding: 12px 24px;
-	border-radius: 4px;
-	transition: all ease-in-out 0.1s;
-	position: relative;
-	display: inline-block;
-	text-align: center;
+  background: red;
+  margin: 0 auto;
+  outline: 0;
+  color: white;
+  border: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
+
 /* H */
 input[type=submit]:focus {
-	background: #A5D6A7;
-	color: whitesmoke;
+  background: #A5D6A7;
+  color: whitesmoke;
 }
+
 /* G */
 input[type=submit]:hover {
-	background: #2196F3;
+  background: #2196F3;
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
+
 /*------------Mediaquery--------------*/
 
 @media (min-width: 1200px) and (max-width: 465px) {
@@ -328,24 +331,22 @@ input[type=submit]:hover {
   .active {
     display: block;
   }
+}
 
-@media screen and (max-width:320px )
-{
-  .first {
-    font-size: 16px;
-    text-align: center;
-    vertical-align: middle;
-    left: 0!important;
-    margin-left: -300px;
-    color: white;
+  @media screen and (max-width:320px) {
+    .first {
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+      left: 0!important;
+      margin-left: -300px;
+      color: white;
+    }
+    .second {
+      font-size: 10px;
+      text-align: center;
+      vertical-align: middle;
+      margin-left: -300px;
+      color: white;
+    }
   }
-  .second {
-    font-size: 10px;
-    text-align: center;
-    vertical-align: middle;
-    margin-left: -300px;
-    color: white;
-}
-
-}
-
