@@ -1,10 +1,10 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,macos,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,windows,macos,linux
+# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,visualstudiocode
 
 ### Linux ###
 *~
-debug.log
+debug.log   
 # temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
 
@@ -52,10 +52,13 @@ Temporary Items
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.code-workspace
+!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
+
+# Built Visual Studio Code Extensions
+*.vsix
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
@@ -63,7 +66,6 @@ Temporary Items
 .ionide
 
 # Support for Project snippet scope
-!.vscode/*.code-snippets
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -91,4 +93,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,macos,linux
+# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode

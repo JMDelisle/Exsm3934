@@ -4,7 +4,21 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Background image on main */
+/* Bootstrap with text on the side. */
+.first {
+  font-family: cursive;
+  color: wheat;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.second {
+  font-family: Cinzel;
+  color: rgb(21, 18, 224);
+  font-size: 20px;
+  font-weight: normal;
+}
+
 .mainpage {
   background-image: url("../img/meatsign.jpg");
   background-size: cover;
@@ -12,13 +26,6 @@
 }
 
 
-li,
-a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-}
 
 label {
   color: white;
@@ -61,7 +68,7 @@ aside {
 span.name {
   font-weight: bold;
   text-decoration: underline;
-  color: rgb(250, 0, 0);
+  color: rgb(21, 250, 0);
 }
 
 /* Nav header styling */
@@ -321,5 +328,24 @@ input[type=submit]:hover {
   .active {
     display: block;
   }
+
+@media screen and (max-width:320px )
+{
+  .first {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    left: 0!important;
+    margin-left: -300px;
+    color: white;
+  }
+  .second {
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: -300px;
+    color: white;
+}
+
 }
 
