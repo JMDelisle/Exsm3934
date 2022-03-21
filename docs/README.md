@@ -3,6 +3,6 @@
 #EXSM3934 Final Project
 I have always dreamed of opening a resturants smoking variety of  different meats. Gathering info for this site will prepare me for the upcoming website to make them even more appealing!
 
-I have tried to dabble all of the source code that we have been taught and a few I had grabbed off the internet to make magic happens.
+I have tried to dabble all of the source code that we have been taught and also browsing the internet to learn the variety of ways to input codes.
 
-License: All photos will be credited accordingly,
+License: All photos will be credited accordingly to unsplash. Attach are their license https://unsplash.com/license.

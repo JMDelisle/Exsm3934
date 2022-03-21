@@ -10,8 +10,9 @@
   color: wheat;
   font-size: 20px;
   font-weight: normal;
+  width: 50%;
 }
-
+/* (C) */
 .second {
   font-family: fantasy;
   color: whitesmoke;
@@ -25,47 +26,11 @@
   background-attachment: fixed;
 }
 
-
-
-label {
-  color: white;
-}
-
 span {
   color: palevioletred;
 }
 
-aside {
-  image-rendering: crisp-edges;
-  position: fixed;
-  bottom: 8px;
-  left: 16px;
-  top: 225px;
-  padding-left: 75px;
-}
 
-/* Main blog */
-
-.container2 {
-  margin: 0;
-  position: absolute;
-  float: left;
-  top: 35%;
-  left: 50%;
-  height: 15%;
-  background-color: transparent;
-  color: white;
-  transform: translate(-50%, -50%);
-}
-
-/* (E) */
-.blogs {
-  display: inline;
-}
-
-
-
-/* (C) */
 span.name {
   font-weight: bold;
   text-decoration: underline;
@@ -139,7 +104,7 @@ ul li a {
 /* Gallery fonts styling */
 #content :not(h2) {
   font-style: italic;
-  color: rgb(199, 0, 0);
+  color: rgb(12, 10, 5);
 }
 
 .containergallery {
@@ -148,14 +113,14 @@ ul li a {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
-  background-color: rgb(255, 250, 250, .1);
+  background-color: rgba(255, 250, 250, .3);
   width: 600px;
-  height: 140px;
+  height: 150px;
 }
 
 
 /*---------- Image slider in gallery------------ */
-
+/* (E) */
 .slider {
   width: 500px;
   height: 300px;
@@ -203,13 +168,13 @@ ul li a {
   position: relative;
   top: -25px;
 }
-
+/* G *?
 .buttons a {
   display: inline-block;
   height: 15px;
   width: 15px;
   border-radius: 50px;
-  background-color: rgb(255, 0, 0, .75);
+  background-color: rgba(204, 0, 255, 0.75);
 }
 
 /* Fixed footer */
@@ -226,6 +191,7 @@ footer {
 }
 
 /*-----------Contact page---------------*/
+/* (F) */
 *:focus {
   outline: 0;
 }
@@ -244,18 +210,20 @@ h3 {
 .red {
   color: red;
 }
-
+/* (A) */
 .container {
   padding: 12px 24px 24px 24px;
   margin: 48px 12px;
-  background: rgb(135, 206, 250, .2);
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url(../img/coolcolours.avif);
+  image-rendering: crisp-edges;
   border-radius: 4px;
 }
 
 label {
   font-size: 0.85em;
   margin-left: 12px;
-  color: white;
+  color: rgb(9, 243, 9);
 }
 
 input[type=text],
@@ -276,7 +244,7 @@ input[type=email]:focus,
 textarea:focus {
   border: 1px solid red;
 }
-
+/* (G) */
 input[type=submit] {
   background: red;
   margin: 0 auto;
