@@ -10,8 +10,9 @@
   color: wheat;
   font-size: 20px;
   font-weight: normal;
-  width: 50%;
+  max-width: 100%;
 }
+
 /* (C) */
 .second {
   font-family: fantasy;
@@ -95,6 +96,10 @@ ul li a {
 }
 
 /*------------Gallery background picture-(A)-------------*/
+section {
+  display: flex;
+}
+
 .gallery2 {
   background-image: url(../img/meats.jpg);
   background-size: cover;
@@ -102,10 +107,6 @@ ul li a {
 }
 
 /* Gallery fonts styling */
-#content :not(h2) {
-  font-style: italic;
-  color: rgb(12, 10, 5);
-}
 
 .containergallery {
   text-align: center;
@@ -114,67 +115,85 @@ ul li a {
   margin-right: auto;
   border-radius: 4px;
   background-color: rgba(255, 250, 250, .3);
-  width: 600px;
-  height: 150px;
+  width: 100%;
 }
 
 
 /*---------- Image slider in gallery------------ */
 /* (E) */
-.slider {
-  width: 500px;
-  height: 300px;
-  background-color: rgb(247, 247, 242);
+
+.carousel {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 75px;
-  text-align: center;
-  overflow: hidden;
+  margin-top: 20px;
+  width: 60%;
+  transition: all 0.3s ease;
+
 }
 
-/* F */
-.image-container {
-  width: 2500px;
-  height: auto;
-  clear: both;
-  position: relative;
-  transition: left 2s;
+.carousel img {
+  image-rendering: crisp-edges;
+  width: 100%;
+  
+  transition: all 0.3s ease;
+  border: 8px solid white;
 }
 
-.slide {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.3);
+  height: 35px;
 }
 
-#slide-1:target~.image-container {
-  left: 0px;
+.item {
+  position: absolute;
+  display: none;
 }
 
-#slide-2:target~.image-container {
-  left: -500px;
+.main {
+  display: block;
 }
 
-#slide-3:target~.image-container {
-  left: -1000px;
+.navigation .prev {
+  position: fixed;
+  z-index: 10;
+  font-size: 25px;
+  top: 75%;
+  left: 320px;
+  font-weight: 700;
 }
 
-#slide-4:target~.image-container {
-  left: -1500px;
+.navigation .next {
+  position: fixed;
+  font-size: 25px;
+  z-index: 10;
+  top: 75%;
+  right: 320px;
 }
 
-.buttons {
-  position: relative;
-  top: -25px;
+.navigation .nav-btn {
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
-/* G */
-.buttons a {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50px;
-  background-color: rgba(204, 0, 255, 0.75);
+
+.navigation .nav-btn:hover {
+  background: white;
 }
 
 /* Fixed footer */
@@ -182,7 +201,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 25px;
+  height: 1.5rem;
   text-align: center;
   background: aqua;
   font-weight: bold;
@@ -210,12 +229,13 @@ h3 {
 .red {
   color: red;
 }
+
 /* (A) */
 .container {
   padding: 12px 24px 24px 24px;
   margin: 48px 12px;
-  background-color: rgba(0, 0, 0, 0.1);
   background-image: url(../img/coolcolours.avif);
+  background-size: cover;
   image-rendering: crisp-edges;
   border-radius: 4px;
 }
@@ -244,6 +264,7 @@ input[type=email]:focus,
 textarea:focus {
   border: 1px solid red;
 }
+
 /* (G) */
 input[type=submit] {
   background: red;
@@ -276,7 +297,7 @@ input[type=submit]:hover {
 
 /*------------Mediaquery--------------*/
 
-@media (min-width: 1200px) and (max-width: 465px) {
+@media (min-width: 375px) and (max-width: 465px) {
   .menu {
     display: block;
   }
@@ -301,20 +322,21 @@ input[type=submit]:hover {
   }
 }
 
-  @media screen and (max-width:320px) {
-    .first {
-      font-size: 16px;
-      text-align: center;
-      vertical-align: middle;
-      left: 0!important;
-      margin-left: -300px;
-      color: white;
-    }
-    .second {
-      font-size: 10px;
-      text-align: center;
-      vertical-align: middle;
-      margin-left: -300px;
-      color: white;
-    }
+@media screen and (max-width:320px) {
+  .first {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    left: 0;
+    margin-left: auto;
+    color: white;
   }
+
+  .second {
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: -300px;
+    color: white;
+  }
+}
