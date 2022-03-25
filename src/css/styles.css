@@ -4,7 +4,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* Bootstrap with text on the side. */
 
 .first {
@@ -35,7 +34,6 @@ span {
   color: palevioletred;
 }
 
-
 span.name {
   font-weight: bold;
   text-decoration: underline;
@@ -55,6 +53,7 @@ nav {
   width: 100%;
   background: rgb(0, 119, 255);
   text-align: center;
+  z-index: 100;
 }
 
 /* Navbar centered */
@@ -123,24 +122,27 @@ section {
   margin-right: auto;
 }
 
-
 /*---------- Image slider in gallery------------ */
 /* (E) */
 
-.carousel {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  width: 60%;
-  transition: all 0.3s ease;
+article {
+  max-width: 800px;
+  margin-inline: auto;
+  position: relative;
+}
 
+.carousel {
+  /* margin-top: 20px; */
+  /* width: 60%; */
+  transition: all 0.3s ease;
 }
 
 .carousel img {
   width: 100%;
   transition: all 0.3s ease;
   border: 8px solid white;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
 }
 
 .caption {
@@ -157,33 +159,26 @@ section {
 }
 
 .item {
-  position: absolute;
   display: none;
 }
 
-.item {
+.main {
   display: block;
 }
 
-.navigation .prev {
-  position: sticky;
-  z-index: 10;
-  font-size: 25px;
-  top: center;
-  left: 320px;
-  font-weight: 700;
+
+
+article .navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
 }
 
-.navigation .next {
-  position: sticky;
-  font-size: 25px;
-  z-index: 10;
-  top: 75%;
-  right: 320px;
-}
 
 .navigation .nav-btn {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   border-radius: 50%;
   width: 30px;
@@ -193,25 +188,26 @@ section {
   align-items: center;
   padding: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-  margin-top: 450px;
 }
 
 .navigation .nav-btn:hover {
-  background: white;
+  background: rgb(202, 216, 13);
 }
-
 
 /* Fixed footer */
-footer {
-  display: grid;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
   text-align: center;
   background: rgb(0, 119, 255);
-  bottom: 0;
-  margin: 10px 0 0 0;
+  margin-top: 100px;
 }
 
+#footername {
+  color: whitesmoke;
+}
 /*-----------Contact page---------------*/
 /* (F) */
 *:focus {
@@ -219,7 +215,7 @@ footer {
 }
 
 .container-contactpage {
-  background-image: url(../img/rackofmeats.jpeg);
+  background-image: url(../img/staff.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -247,8 +243,8 @@ label {
   color: rgb(9, 243, 9);
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   width: 100%;
   padding: 12px;
@@ -260,14 +256,14 @@ textarea {
   resize: vertical;
 }
 
-input[type=text]:focus,
-input[type=email]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
 textarea:focus {
   border: 1px solid red;
 }
 
 /* (G) */
-input[type=submit] {
+input[type="submit"] {
   background: red;
   margin: 0 auto;
   outline: 0;
@@ -282,14 +278,14 @@ input[type=submit] {
 }
 
 /* H */
-input[type=submit]:focus {
-  background: #A5D6A7;
+input[type="submit"]:focus {
+  background: #a5d6a7;
   color: whitesmoke;
 }
 
 /* G */
-input[type=submit]:hover {
-  background: #2196F3;
+input[type="submit"]:hover {
+  background: #2196f3;
 }
 
 .center {
@@ -323,7 +319,7 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
   .first {
     font-size: 16px;
     text-align: center;
