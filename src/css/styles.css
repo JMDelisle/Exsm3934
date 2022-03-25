@@ -4,8 +4,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* Bootstrap with text on the side. */
+
 .first {
+  margin-top: 75px;
+  margin-right: auto;
   font-family: cursive;
   color: wheat;
   font-size: 20px;
@@ -21,7 +25,7 @@
   font-weight: normal;
 }
 
-.mainpage {
+.container-main {
   background-image: url("../img/meatsign.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -49,7 +53,7 @@ header {
 
 nav {
   width: 100%;
-  background: aqua;
+  background: rgb(0, 119, 255);
   text-align: center;
 }
 
@@ -69,7 +73,8 @@ ul li {
 
 /* button hover transparents */
 ul li:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
 }
 
 /* Nav font color (D)*/
@@ -87,7 +92,7 @@ ul li a {
 .menu {
   width: 100%;
   padding: 10px 20px;
-  background: aqua;
+  background: rgb(0, 119, 255);
   text-align: right;
   color: black;
   font-size: 30px;
@@ -100,7 +105,7 @@ section {
   display: flex;
 }
 
-.gallery2 {
+.container-gallery {
   background-image: url(../img/meats.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -108,14 +113,14 @@ section {
 
 /* Gallery fonts styling */
 
-.containergallery {
-  text-align: center;
+.container-gallerys {
   padding: 12px 24px 24px 24px;
+  margin: 48px 12px;
+  border-radius: 4px;
+  background-color: rgba(255, 228, 196, 0.486);
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
-  background-color: rgba(255, 250, 250, .3);
-  width: 100%;
 }
 
 
@@ -133,9 +138,7 @@ section {
 }
 
 .carousel img {
-  image-rendering: crisp-edges;
   width: 100%;
-  
   transition: all 0.3s ease;
   border: 8px solid white;
 }
@@ -158,21 +161,21 @@ section {
   display: none;
 }
 
-.main {
+.item {
   display: block;
 }
 
 .navigation .prev {
-  position: fixed;
+  position: sticky;
   z-index: 10;
   font-size: 25px;
-  top: 75%;
+  top: center;
   left: 320px;
   font-weight: 700;
 }
 
 .navigation .next {
-  position: fixed;
+  position: sticky;
   font-size: 25px;
   z-index: 10;
   top: 75%;
@@ -190,23 +193,23 @@ section {
   align-items: center;
   padding: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 450px;
 }
 
 .navigation .nav-btn:hover {
   background: white;
 }
 
+
 /* Fixed footer */
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 1.5rem;
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 3;
   text-align: center;
-  background: aqua;
-  font-weight: bold;
-  font-style: italic;
-  color: #111;
+  background: rgb(0, 119, 255);
+  bottom: 0;
+  margin: 10px 0 0 0;
 }
 
 /*-----------Contact page---------------*/
@@ -215,7 +218,7 @@ footer {
   outline: 0;
 }
 
-.contactpage {
+.container-contactpage {
   background-image: url(../img/rackofmeats.jpeg);
   background-size: cover;
   background-attachment: fixed;
@@ -234,10 +237,8 @@ h3 {
 .container {
   padding: 12px 24px 24px 24px;
   margin: 48px 12px;
-  background-image: url(../img/coolcolours.avif);
-  background-size: cover;
-  image-rendering: crisp-edges;
   border-radius: 4px;
+  background: rgba(148, 148, 148, 0.603);
 }
 
 label {
