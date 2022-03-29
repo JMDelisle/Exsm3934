@@ -24,6 +24,12 @@
   font-weight: normal;
 }
 
+/* (A) */
+.img-responsive {
+  image-rendering: crisp-edges;
+}
+
+
 .container-main {
   background-image: url("../img/meatsign.jpg");
   background-size: cover;
@@ -69,7 +75,7 @@ ul li {
   display: inline-block;
   padding: 20px;
 }
-
+/* (E) */
 /* button hover transparents */
 ul li:hover {
   background-color: rgba(255, 255, 255, 0.3);
@@ -99,7 +105,7 @@ ul li a {
   cursor: pointer;
 }
 
-/*------------Gallery background picture-(A)-------------*/
+/*------------Gallery background picture--------------*/
 section {
   display: flex;
 }
@@ -123,7 +129,7 @@ section {
 }
 
 /*---------- Image slider in gallery------------ */
-/* (E) */
+
 
 article {
   max-width: 800px;
@@ -208,6 +214,7 @@ article .navigation {
 #footername {
   color: whitesmoke;
 }
+
 /*-----------Contact page---------------*/
 /* (F) */
 *:focus {
@@ -229,7 +236,6 @@ h3 {
   color: red;
 }
 
-/* (A) */
 .container {
   padding: 12px 24px 24px 24px;
   margin: 48px 12px;
